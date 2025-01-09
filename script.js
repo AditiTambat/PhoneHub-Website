@@ -67,5 +67,25 @@ document.addEventListener('DOMContentLoaded', () => {
     applyZoomEffect();
     setInterval(restartZoomEffect, 5000); 
   });
+
+  //for accessing each phone from dropdown
+  document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const brand = urlParams.get('brand'); 
+    const allSections = document.querySelectorAll('.android');
+    allSections.forEach(section => {
+      section.style.display = 'none';
+    });
   
+    if (brand) {
+      const selectedSection = document.getElementById(brand);
+      if (selectedSection) {
+        selectedSection.style.display = 'block';
+      } else {
+        console.error(`No section found for brand: ${brand}`);
+      }
+    }
+  });
+  
+
   
