@@ -51,41 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
     typeEffect();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const anHeading = document.querySelector('.an-heading');
-  
-    // Function to apply the zoom effect
-    const applyZoomEffect = () => {
-      anHeading.classList.add('zoom-in-out'); 
-    };
-    const restartZoomEffect = () => {
-      anHeading.classList.remove('zoom-in-out');
-      setTimeout(() => {
-        anHeading.classList.add('zoom-in-out');
-      }, 100);
-    };
-    applyZoomEffect();
-    setInterval(restartZoomEffect, 5000); 
-  });
-
-  //for accessing each phone from dropdown
+//for accessing each phone from dropdown
   document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const brand = urlParams.get('brand'); 
     const allSections = document.querySelectorAll('.android');
     allSections.forEach(section => {
-      section.style.display = 'none';
+      section.style.display = 'block'; 
     });
-  
-    if (brand) {
-      const selectedSection = document.getElementById(brand);
-      if (selectedSection) {
-        selectedSection.style.display = 'block';
-      } else {
-        console.error(`No section found for brand: ${brand}`);
-      }
-    }
   });
   
+  
 
+ 
   
