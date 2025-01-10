@@ -68,23 +68,33 @@
 /* android styling starts here    */
 
 .an-heading{
-  margin-top: 10%;
-  font-size: 3.5rem;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 3rem;
   font-weight: bold;
 }
-.content{
+
+.top-sticky {
   position: sticky;
   top: 0;
+  margin-left: 400px;
+  margin-right: 400px; 
   z-index: 1020; 
+  background-color: #55a4b0; 
   padding: 8px;
-  margin-left: 400px; 
+}
+.card-section {
+  padding-top: 80px; 
+  margin-top: 20px;
 }
 .content a{
   color: black;
-  padding: 25px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
   font-size: 20px;
+  margin-left: 30px;
 }
+
 .card-body {
   padding: 10px;
 }
