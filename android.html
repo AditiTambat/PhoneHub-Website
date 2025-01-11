@@ -36,42 +36,49 @@
     </style>
   </head>
   <body>
-    <div>
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-between mb-3">
+        <!-- Android Name and Logo -->
+        <div class="col-auto d-flex align-items-center">
           <p class="name mb-0 me-3">ANDROID</p>
-          <img src="imgs/androidlogo.png" alt="android" height="50px" width="50px">
+          <img src="imgs/androidlogo.png" alt="android" class="img-fluid" style="max-height: 50px; width: auto;">
         </div>
-        <button onclick="location.href='index.html'" class="btn btn-secondary">Back to Home</button>
+    
+        <!-- Back to Home Button -->
+        <div class="col-auto">
+          <button onclick="location.href='index.html'" class="btn btn-secondary button-adjust">Back to Home</button>
+        </div>
       </div>
-      
-
-    <div class="an-heading text-center">
-      <p class="mb-0"> An Android device </p>
-      <p> for everyone.</p>
-    </div>
-
-    <div class="content top-sticky">
-      <ul class="nav nav-underline">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#samsung">Samsung</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#google">Google</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#motorola">Motorola</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#oneplus">OnePlus</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#nothing">Nothing</a>
-        </li>
-      </ul>
+    
+      <!-- Heading Section -->
+      <div class="an-heading text-center">
+        <p class="mb-0">An Android device</p>
+        <p>for everyone.</p>
+      </div>
     </div>
     
-
+    
+      <div class="content top-sticky">
+        <ul class="nav nav-underline justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#samsung">Samsung</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#google">Google</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#motorola">Motorola</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#oneplus">OnePlus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nothing">Nothing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
   <div class="carousal-container">
 <!-- Samsung card  -->
  <section class="android" id="samsung">
@@ -253,9 +260,9 @@
                 </div>
               </div>     
       </div>
-
+     </div>
 </section>
- </div>
+ 
 <!-- oneplus cards  -->
 <section class="android" id="oneplus">
         <div class="container mt-3 p-3">
@@ -294,7 +301,6 @@
                 </div>
               </div>       
       </div>
-
 </section>
 
 <!-- Nothing cards  -->
@@ -337,7 +343,7 @@
           </div>        
       </div>
 </section>
-
+ 
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
    <script src="script.js"></script>
