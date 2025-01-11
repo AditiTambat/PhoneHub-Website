@@ -17,26 +17,25 @@
     </style>
   </head>
   <body>
-    <!-- iphone info starts here  -->
-    <div class="container mt-3">
-        <button onclick="location.href='index.html'" class="btn btn-secondary">Back to Home</button>
-    </div>
-      
-    <p class="mt-5 fw-bold" style="display: inline-block; font-size: 60px; margin-left: 100px">
-        iPhone </p>
-      <p class="fw-bold fs-2" style="display: inline-block; margin-left: 800px">
-        Design to be loved.
-      </p>
-      <!-- iphone video  -->
-      <div class="video">
-        <video src="video/iphone.mp4" controls autoplay loop muted>
-          Your browser does not support the video tag.
-        </video>
-      </div>
-       
- <!-- iphone video  -->
+<!-- iPhone info starts here -->
+<div class="container mt-3 d-flex justify-content-center">
+  <button onclick="location.href='index.html'" class="btn btn-secondary">Back to Home</button>
+</div>
+
+<div class="container d-flex justify-content-between align-items-center mt-5">
+  <p class="fw-bold iphone-title">iPhone</p>
+  <p class="fw-bold iphone-tagline">Designed to be loved.</p>
+</div>
+
+<!-- iPhone video start -->
+<div class="video-container">
+  <video src="video/iphone.mp4" controls autoplay loop muted>
+    Your browser does not support the video tag.
+  </video>
+</div>
+<!-- iPhone video end -->
   
-    <!-- iphone cards  -->
+<!-- iphone cards starts -->
      <section class="ip_intro">
       <div class="iheading">
         <h2>Get to know iPhone.</h2>
@@ -105,9 +104,10 @@
         </div>
      <!-- iphone cards  -->
      </section>
+<!-- iphone cards end  -->
     
   
-   <!-- another iphones with price  -->
+<!-- another iphones with price  -->
    <section id="ip-prize" style="margin-bottom: 30px;">
     <div class="container mt-5">
       <div class="d-flex overflow-auto gap-5">
