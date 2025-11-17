@@ -1,4 +1,4 @@
-# PhoneHub-Website
+# PhoneHub-Frontend
 
 ## PhoneHub
 It is a platform to discover and compare the latest smartphones from all major brands. 
